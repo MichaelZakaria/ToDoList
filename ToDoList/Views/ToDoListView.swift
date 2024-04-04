@@ -51,5 +51,5 @@ struct ToDoListView: View {
 }
 
 #Preview {
-    ToDoListView(userId: "DWO9tkmUu6fYh5fI9SBRcfgOxkL2")
+    ToDoListView(userId: "123")
 }

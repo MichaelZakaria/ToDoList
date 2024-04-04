@@ -24,6 +24,7 @@ class RegisterViewViewModel: ObservableObject {
         
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             guard let userid = result?.user.uid else {
+                self?.errorMessage = "invalid credentials"
                 return
             }
             
